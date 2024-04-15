@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e89f9f;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #656262;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        label[for="email"], [for="to"], [for="subject"], [for="message"] {
+            color: #fff;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+
+        input[type="submit"] {
+            background-color: #e89f9f;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f47487;
+        }
+    </style>
+</head>
+<body>
+    <form action="/send_email" method="post">
+        <h1>Gmail</h1>
+        <label for="email">From Zhanel</label><br>
+
+        <label for="to">To:</label>
+        <input type="email" name="to" id="to">
+
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject">
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
+
+

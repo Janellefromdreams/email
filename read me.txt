@@ -1,0 +1,13 @@
+	
+	Instructions on how to use this application
+
+	1. Create your own app password through two-factor authentication and copy-paste it to the app.js where you see 
+		"pass" variable. Write your log in nickname to a "user" variable.
+
+	2. Make sure you have necessary json packages and modules: express, nodemailer, path, http
+
+	3. Run the app with "node app"
+
+	4. Open browser and type http://localhost:3000
+
+	5. Now, you can send messages to the gmail users
